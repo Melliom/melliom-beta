@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+svg .red {
+  fill: #db9500;
+  stroke: #111;
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 4.9s ease-out; }
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+svg {
+  position: absolute;
+  font: 20em montserrat;
+  letter-spacing: -1.5rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%; }
+
+svg text {
+  fill: #444;
+  stroke: #111;
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 4s ease-out; }
+
+@keyframes stroke-offset {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 5px;
+    stroke-dasharray: 0% 100%; }
+  25% {
+    stroke-width: 5px; }
+  50% {
+    fill-opacity: 0; }
+  75% {
+    stroke-width: 5px;
+    fill-opacity: 0; }
+  90% {
+    stroke-width: 5px;
+    fill-opacity: 0; }
+  100% {
+    stroke-width: 0; } }

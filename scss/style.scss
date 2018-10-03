@@ -1,7 +1,28 @@
+@import "./variables.scss";
 $myft-color: #2C2C2C;
 $bg-color: #F4F6F7;
 
 body{
-  color: $myft-color;
-  background-color: $bg-color;
+  .banner{
+    color: $myft-color;
+    min-height: calc(100vh);
+    background-image: url("../img/landing-bg.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .company-name{
+      margin-top: 100px;
+      height: 200px;
+      padding: 1.5rem;
+    }
+
+    p{
+      margin-left: 4rem;
+      padding-top: 2.5rem;
+      font-family: montserrat;
+    }
+
+    // import melliom stroke effect
+    @import "../css/libraries.css";
+  }
 }

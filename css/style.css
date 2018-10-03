@@ -1,3 +1,18 @@
-body {
+@import url(../css/libraries.css);
+.btn-rounded {
+  border-radius: 18px; }
+
+body .banner {
   color: #2C2C2C;
-  background-color: #F4F6F7; }
+  min-height: calc(100vh);
+  background-image: url("../img/landing-bg.jpg");
+  background-size: cover;
+  background-position: center; }
+  body .banner .company-name {
+    margin-top: 100px;
+    height: 200px;
+    padding: 1.5rem; }
+  body .banner p {
+    margin-left: 4rem;
+    padding-top: 2.5rem;
+    font-family: montserrat; }
