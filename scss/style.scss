@@ -2,6 +2,10 @@
 $myft-color: #2C2C2C;
 $bg-color: #F4F6F7;
 
+html{
+  background-color: #fafafa;
+}
+
 body{
   .banner{
     color: $myft-color;
@@ -10,19 +14,61 @@ body{
     background-size: cover;
     background-position: center;
 
+
     .company-name{
-      margin-top: 100px;
+      margin-top: 40px;
       height: 200px;
       padding: 1.5rem;
     }
 
     p{
-      margin-left: 4rem;
-      padding-top: 2.5rem;
+      margin-left: 9.1rem;
+      padding-top: 2rem;
       font-family: montserrat;
+      font-size: 15px;
+    }
+    a {
+      .fa{
+        font-size: 20px;
+      }
+
+    }
+    a:hover{
+      -webkit-animation-name: hvr-icon-down;
+      animation-name: hvr-icon-down;
+      -webkit-animation-duration: .75s;
+      animation-duration: .75s;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out
     }
 
+  }
+
+  .navbar{
+    background-color: #fafafa;
+    .nav-link{
+      font-size: 18px;
+      margin: 0 2.6rem;
+      font-family: avenirMedium;
+    }
+    .navbar-brand {
+      span{
+        font-size: 34px;
+        position: absolute;
+        margin-top: 16px;
+        font-family: avenirMedium;
+      }
+      img{
+        padding: 5px;
+        border: double 5px rgba(255, 103, 0, 0.5);
+        box-shadow: 2px 5px 20px 0px rgba(46,61,73,0.15);
+        // border-radius: 6px;
+      }
+
+    }
+
+  }
     // import melliom stroke effect
     @import "../css/libraries.css";
-  }
+
 }

@@ -2,17 +2,58 @@
 .btn-rounded {
   border-radius: 18px; }
 
-body .banner {
-  color: #2C2C2C;
-  min-height: calc(100vh);
-  background-image: url("../img/landing-bg.jpg");
-  background-size: cover;
-  background-position: center; }
-  body .banner .company-name {
-    margin-top: 100px;
-    height: 200px;
-    padding: 1.5rem; }
-  body .banner p {
-    margin-left: 4rem;
-    padding-top: 2.5rem;
-    font-family: montserrat; }
+.btn-banner {
+  padding: .4rem 2rem;
+  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+
+@font-face {
+  font-family: avenir;
+  src: url("../fonts/Avenir-Book.otf"); }
+
+@font-face {
+  font-family: avenirMedium;
+  src: url(../fonts/Avenir-Medium.otf); }
+
+html {
+  background-color: #fafafa; }
+
+body { }
+  body .banner {
+    color: #2C2C2C;
+    min-height: calc(100vh);
+    background-image: url("../img/landing-bg.jpg");
+    background-size: cover;
+    background-position: center; }
+    body .banner .company-name {
+      margin-top: 40px;
+      height: 200px;
+      padding: 1.5rem; }
+    body .banner p {
+      margin-left: 9.1rem;
+      padding-top: 2rem;
+      font-family: montserrat;
+      font-size: 15px; }
+    body .banner a .fa {
+      font-size: 20px; }
+    body .banner a:hover {
+      -webkit-animation-name: hvr-icon-down;
+      animation-name: hvr-icon-down;
+      -webkit-animation-duration: .75s;
+      animation-duration: .75s;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; }
+  body .navbar {
+    background-color: #fafafa; }
+    body .navbar .nav-link {
+      font-size: 18px;
+      margin: 0 2.6rem;
+      font-family: avenirMedium; }
+    body .navbar .navbar-brand span {
+      font-size: 34px;
+      position: absolute;
+      margin-top: 16px;
+      font-family: avenirMedium; }
+    body .navbar .navbar-brand img {
+      padding: 5px;
+      border: double 5px rgba(255, 103, 0, 0.5);
+      box-shadow: 2px 5px 20px 0px rgba(46, 61, 73, 0.15); }
