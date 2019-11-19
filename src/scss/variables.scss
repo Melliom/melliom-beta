@@ -1,10 +1,26 @@
+// colors
+
+$color-primary: #ff6700;
+$color-light: #ffffff;
+$color-dark: rgb(33, 33, 33);
+$color-dark-secondary: hsl(0, 0%, 45%);
+
+
+
 .btn-rounded{
   border-radius: 18px;
 }
 
 .btn-banner{
   padding: .4rem 2rem;
-  box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+  background: $color-primary;
+  color: $color-light;
+  box-shadow: 8px 10px 20px 0px rgba($color-primary, 0.15);
+  &:hover {
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    background: $color-light;
+  }
 }
 
 @font-face {

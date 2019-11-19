@@ -1,16 +1,18 @@
 @import "./variables.scss";
+
 $myft-color: #2C2C2C;
 $bg-color: #F4F6F7;
 
 html{
   background-color: #fafafa;
+  scroll-behavior: smooth;
 }
 
 body{
   .banner{
     color: $myft-color;
     min-height: calc(100vh);
-    background-image: url("../img/landing-bg.jpg");
+    background-image: url("../img/landing-bg1.jpg");
     background-size: cover;
     background-position: center;
 
@@ -65,6 +67,161 @@ body{
         // border-radius: 6px;
       }
 
+    }
+
+  }
+
+  #about-us{
+    #myVideo {
+      width: 100%; 
+      height: auto;
+      position: absolute;
+    }
+    #video-place-holder {
+      width: 100%; 
+      height: auto;
+      visibility: hidden;
+    }
+
+    .content{
+      position: absolute;
+      z-index: 1;
+      right: 40px;
+      width: 40%;
+      padding: 3rem;
+      color: $color-light;
+      font-family: 'avenir';
+      margin-top: 2rem;
+
+      h3{
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 1rem 0;
+      }
+      p{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+    }
+
+  }
+
+  #projects{
+    min-height: 50rem;
+    font-family: 'avenirMedium';
+    .intro{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 6rem 0;
+  
+      .decoration{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;
+        .bar{
+          background: $color-primary;
+          height: .7rem;
+          width: 4rem;
+          border-radius: 10px;
+        }
+        .circle{
+          background: rgba($color-primary, 0.6);
+          height: 0.8rem;
+          width: 0.8rem;
+          border-radius: 0.4rem;
+          margin-left: 0.5rem;
+        }
+      }
+      .content{
+        width: 30%;
+        h2{
+          font-size: 2.5rem;
+          font-weight: 900;
+          margin: 1rem 0;
+          color: $color-dark;
+          letter-spacing: -1px;
+          word-spacing: -1px;
+        }
+        p{
+          font-size: 1.2rem;
+          color: $color-dark-secondary;
+          line-height: 2rem;
+        }
+      }
+      .illustration{
+        width: 30%;
+        background-image: url("../img/project-illustration2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+      }
+    }
+
+    #list{
+      padding: 0 9rem;
+      .carousel-inner{
+        background: rgba(220, 220, 220, 0.1);
+      }
+
+      // carousel icon 
+      .carousel-control-prev, .carousel-control-next {
+        opacity: unset;
+        .carousel-control-prev-icon, .carousel-control-next-icon{
+          width: 40px;
+          height: 40px;
+        }
+        .carousel-control-prev-icon{
+          background-image: url("../img/prev.png");
+        }
+        .carousel-control-next-icon{
+          background-image: url("../img/next.png");
+        }
+      }
+
+      // carousel indicator 
+      .carousel-indicators{
+        bottom: 2px;
+        li {
+          background-color: rgba($color-primary, 0.3);
+          margin-top: 2rem;
+        }
+        .active {
+          background-color: rgba($color-primary, 1);
+        }
+      }
+      .carousel-item{
+        padding: 2rem;
+      }
+      .p-card{
+        padding: 1rem;
+        box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.1);
+        .header{
+          display: flex;
+          .illustration{
+            width: 40%;
+            img{
+              width: 100%;
+            }
+          }
+          h3{
+            margin: .9rem 0.3rem;
+            color: $color-dark;
+            font-size: 23px;
+            font-weight: 800;
+          }
+        }
+        .body{
+          p{
+            color: $color-dark-secondary;
+            line-height: 1.5rem;
+            font-size: 15px;
+            font-family: 'avenir';
+            font-weight: 600;
+          }
+        }
+      }
     }
 
   }

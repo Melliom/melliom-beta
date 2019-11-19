@@ -108,3 +108,21 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+// scroll reveal about-us 
+ScrollReveal().reveal('#about-us .title', { delay: 500, origin: 'top', interval: '200', distance: '5px', easing: 'cubic-bezier(.31,.13,.82,.36)' });
+ScrollReveal().reveal('#about-us .body', { delay: 600, easing: 'cubic-bezier(.31,.13,.82,.36)' });
+
+// scroll reveal project 
+ScrollReveal().reveal('#projects .intro .content', { delay: 700, origin: 'left', interval: '200', distance: '5px', easing: 'cubic-bezier(.31,.13,.82,.36)' });
+
+ScrollReveal().reveal('#projects .intro .illustration', { delay: 900, origin: 'left', distance: '5px', easing: 'cubic-bezier(.31,.13,.82,.36)' });
+
+
+ScrollReveal().reveal('#projects #list', { delay: 900,  origin: 'top', distance: '5px', easing: 'cubic-bezier(.31,.13,.82,.36)' });
+
+
+
+
+// project list carousel 
+$('#list').carousel();

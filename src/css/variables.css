@@ -3,7 +3,13 @@
 
 .btn-banner {
   padding: .4rem 2rem;
-  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+  background: #ff6700;
+  color: #ffffff;
+  box-shadow: 8px 10px 20px 0px rgba(255, 103, 0, 0.15); }
+  .btn-banner:hover {
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    background: #ffffff; }
 
 @font-face {
   font-family: avenir;

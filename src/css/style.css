@@ -4,7 +4,13 @@
 
 .btn-banner {
   padding: .4rem 2rem;
-  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+  background: #ff6700;
+  color: #ffffff;
+  box-shadow: 8px 10px 20px 0px rgba(255, 103, 0, 0.15); }
+  .btn-banner:hover {
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    background: #ffffff; }
 
 @font-face {
   font-family: avenir;
@@ -15,13 +21,14 @@
   src: url(../fonts/Avenir-Medium.otf); }
 
 html {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  scroll-behavior: smooth; }
 
 body { }
   body .banner {
     color: #2C2C2C;
     min-height: calc(100vh);
-    background-image: url("../img/landing-bg.jpg");
+    background-image: url("../img/landing-bg1.jpg");
     background-size: cover;
     background-position: center; }
     body .banner .company-name {
@@ -57,3 +64,112 @@ body { }
       padding: 5px;
       border: double 5px rgba(255, 103, 0, 0.5);
       box-shadow: 2px 5px 20px 0px rgba(46, 61, 73, 0.15); }
+  body #about-us #myVideo {
+    width: 100%;
+    height: auto;
+    position: absolute; }
+  body #about-us #video-place-holder {
+    width: 100%;
+    height: auto;
+    visibility: hidden; }
+  body #about-us .content {
+    position: absolute;
+    z-index: 1;
+    right: 40px;
+    width: 40%;
+    padding: 3rem;
+    color: #ffffff;
+    font-family: 'avenir';
+    margin-top: 2rem; }
+    body #about-us .content h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 1rem 0; }
+    body #about-us .content p {
+      font-size: 1.2rem;
+      line-height: 1.5rem; }
+  body #projects {
+    min-height: 50rem;
+    font-family: 'avenirMedium'; }
+    body #projects .intro {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 6rem 0; }
+      body #projects .intro .decoration {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem; }
+        body #projects .intro .decoration .bar {
+          background: #ff6700;
+          height: .7rem;
+          width: 4rem;
+          border-radius: 10px; }
+        body #projects .intro .decoration .circle {
+          background: rgba(255, 103, 0, 0.6);
+          height: 0.8rem;
+          width: 0.8rem;
+          border-radius: 0.4rem;
+          margin-left: 0.5rem; }
+      body #projects .intro .content {
+        width: 30%; }
+        body #projects .intro .content h2 {
+          font-size: 2.5rem;
+          font-weight: 900;
+          margin: 1rem 0;
+          color: #212121;
+          letter-spacing: -1px;
+          word-spacing: -1px; }
+        body #projects .intro .content p {
+          font-size: 1.2rem;
+          color: #737373;
+          line-height: 2rem; }
+      body #projects .intro .illustration {
+        width: 30%;
+        background-image: url("../img/project-illustration2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.8; }
+    body #projects #list {
+      padding: 0 9rem; }
+      body #projects #list .carousel-inner {
+        background: rgba(220, 220, 220, 0.1); }
+      body #projects #list .carousel-control-prev, body #projects #list .carousel-control-next {
+        opacity: unset; }
+        body #projects #list .carousel-control-prev .carousel-control-prev-icon, body #projects #list .carousel-control-prev .carousel-control-next-icon, body #projects #list .carousel-control-next .carousel-control-prev-icon, body #projects #list .carousel-control-next .carousel-control-next-icon {
+          width: 40px;
+          height: 40px; }
+        body #projects #list .carousel-control-prev .carousel-control-prev-icon, body #projects #list .carousel-control-next .carousel-control-prev-icon {
+          background-image: url("../img/prev.png"); }
+        body #projects #list .carousel-control-prev .carousel-control-next-icon, body #projects #list .carousel-control-next .carousel-control-next-icon {
+          background-image: url("../img/next.png"); }
+      body #projects #list .carousel-indicators {
+        bottom: 2px; }
+        body #projects #list .carousel-indicators li {
+          background-color: rgba(255, 103, 0, 0.3);
+          margin-top: 2rem; }
+        body #projects #list .carousel-indicators .active {
+          background-color: #ff6700; }
+      body #projects #list .carousel-item {
+        padding: 2rem; }
+      body #projects #list .p-card {
+        padding: 1rem;
+        box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.1); }
+        body #projects #list .p-card .header {
+          display: flex; }
+          body #projects #list .p-card .header .illustration {
+            width: 40%; }
+            body #projects #list .p-card .header .illustration img {
+              width: 100%; }
+          body #projects #list .p-card .header h3 {
+            margin: .9rem 0.3rem;
+            color: #212121;
+            font-size: 23px;
+            font-weight: 800; }
+        body #projects #list .p-card .body p {
+          color: #737373;
+          line-height: 1.5rem;
+          font-size: 15px;
+          font-family: 'avenir';
+          font-weight: 600; }
