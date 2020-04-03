@@ -126,3 +126,4 @@ ScrollReveal().reveal('#projects #list', { delay: 900,  origin: 'top', distance:
 
 // project list carousel 
 $('#list').carousel();
+$('#coming-list').carousel();
